@@ -17,7 +17,7 @@ if game:IsLoaded() then
         TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0) -- Centered on the screen
         TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
         TextLabel.Size = UDim2.new(0, 800, 0, 200)
-        TextLabel.Text = "Lorenlol.lua is loading"
+        TextLabel.Text = "Tuscan.lua Loading.."
         TextLabel.TextColor3 = Color3.fromRGB(228, 173, 200)
         TextLabel.TextTransparency = 1.000
         TextLabel.TextScaled = true
@@ -27,7 +27,7 @@ if game:IsLoaded() then
         ImageLabel.Size = UDim2.new(0, 400, 0, 400) -- Original size
         ImageLabel.Position = UDim2.new(0.5, 0, 0.6, 0) -- Start position
         ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-        ImageLabel.Image = "rbxassetid://1" -- New asset ID
+        ImageLabel.Image = "rbxassetid://17676210956" -- New asset ID
         ImageLabel.ImageTransparency = 1.000 
         local tweenStartBlur = TweenService:Create(Blur, TweenInfo.new(0.70), {Size = 24})
         local tweenStartTextTransparency = TweenService:Create(TextLabel, TweenInfo.new(0.70), {TextTransparency = 0})
@@ -78,8 +78,8 @@ getgenv().Vepar = {
     ['Camlock'] = {
         ['Prediction'] = 0.13419,
         ['Prediction Method'] = {
-            ['X'] = 0.0.1356875,
-            ['Y'] = 0.1285,
+            ['X'] = 0.132,
+            ['Y'] = 0.172,
             }
         },
         ['JumpCheck'] = {
@@ -105,9 +105,9 @@ local RunService = game:GetService("RunService")
 local LocalPlayer = Players.LocalPlayer
 local Mouse = game.Players.LocalPlayer:GetMouse()
 local CamlockState = false
-local Prediction = 0.15634
+local Prediction = 0.1356875
 local Prediction = 0.1445
-local Smoothness = 0.0835
+local Smoothness = 0.086
 local SmoothEnabled = true
 local AutoAir = true
 local EnemyAir = true
@@ -161,7 +161,7 @@ local gui = Instance.new("ScreenGui")
 gui.Name = "Dukeshadow"
 gui.Parent = game.CoreGui
 local TextButton = Instance.new("TextButton")
-TextButton.Text = "Lorenlol"
+TextButton.Text = "Tuscan.loll"
 TextButton.TextSize = 25
 TextButton.TextColor3 = Color3.new(1, 1, 1)
 TextButton.BackgroundColor3 = Color3.new(0.1, 0.1, 0.1) -- Dark shade of black
@@ -290,7 +290,7 @@ local function randomizeHitbox(player)
     local character = player.Character
     if character and character:FindFirstChild("HumanoidRootPart") then
         local HitBoxGram = character.HumanoidRootPart
-        local randomSize = Vector3.new(math.random(10, 30), math.random(10, 30), math.random(10, 30))
+        local randomSize = Vector3.new(math.random(7, 30), math.random(7, 30), math.random(7, 30))
         HitBoxGram.Size = randomSize
         HitBoxGram.Massless = true
         HitBoxGram.CanCollide = false
